@@ -4,8 +4,8 @@ How to obtain and install an SSL certificate using `Certbot` on an Ubuntu server
 
 **Prerequisites:**
 
-- Nginx installation  
-- Nginx configuration for the given domain exists
+- [Nginx installation](/notes/nginx-installation.md)  
+- [Nginx configuration](/notes/nginx-configuration.md) for the given domain exists
 
 ## Install Certbot and Nginx plugin
 

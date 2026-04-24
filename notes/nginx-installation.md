@@ -80,4 +80,4 @@ sudo systemctl enable nginx
 
 ## Related
 
-- Nginx configuration
+- [Nginx configuration](/notes/nginx-configuration.md)

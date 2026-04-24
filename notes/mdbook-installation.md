@@ -1,3 +1,7 @@
+## Sources
+
+- [Official documentation](https://rust-lang.github.io/mdBook/guide/installation.html)
+
 ## Prerequisites
 
 - [Rust installation](/notes/rust-installation.md)

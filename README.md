@@ -4,5 +4,5 @@ This repository contains my personal notes.
 
 ## Table of Contents
 
-- [Advanced Packaging Tool](notes/Advanced Packaging Tool.md)
+- [Advanced Packaging Tool](notes/advanced-packaging-tool.md)
 

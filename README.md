@@ -8,6 +8,7 @@ This repository contains my personal notes.
 - [Build Eleventy On Linux](notes/build-eleventy-on-linux.md)
 - [Eleventy Initial Setup](notes/eleventy-initial-setup.md)
 - [Mdbook Installation](notes/mdbook-installation.md)
+- [Miniflux Installation](notes/miniflux-installation.md)
 - [Nginx Configuration](notes/nginx-configuration.md)
 - [Nginx Installation](notes/nginx-installation.md)
 - [Nodejs Installation](notes/nodejs-installation.md)

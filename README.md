@@ -9,6 +9,7 @@ This repository contains my personal notes.
 - [Eleventy Initial Setup](notes/eleventy-initial-setup.md)
 - [Nginx Configuration](notes/nginx-configuration.md)
 - [Nginx Installation](notes/nginx-installation.md)
+- [Nodejs Installation](notes/nodejs-installation.md)
 - [Open Ssh](notes/open-ssh.md)
 - [Push A Repo To Github](notes/push-a-repo-to-github.md)
 - [Snap Package Management](notes/snap-package-management.md)

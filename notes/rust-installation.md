@@ -1,3 +1,7 @@
+## Sources
+
+- [Official documentation](https://rust-lang.org/tools/install/)
+
 ## Install Rust (via rustup)
 
 ```bash

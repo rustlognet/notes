@@ -10,9 +10,9 @@ This repository contains my personal notes.
 - [Nginx Configuration](notes/nginx-configuration.md)
 - [Nginx Installation](notes/nginx-installation.md)
 - [Nodejs Installation](notes/nodejs-installation.md)
-- [Open SSH](notes/open-SSH.md)
+- [Open Ssh](notes/open-ssh.md)
 - [Push A Repo To Github](notes/push-a-repo-to-github.md)
 - [Snap Package Management](notes/snap-package-management.md)
-- [SSL Certificate](notes/SSL-certificate.md)
+- [Ssl Certificate](notes/ssl-certificate.md)
 - [Syncthing Installation](notes/syncthing-installation.md)
 

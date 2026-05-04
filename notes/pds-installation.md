@@ -303,7 +303,7 @@ Note:
 
 ## Configure SMTP (proton mail)
 
-You will need to configure SMTP in your PDS to receive any emails such as for instance Bluesky email verification. The step below are for proton mail (for business subscribers).
+You will need to configure SMTP in your PDS to receive any emails such as for instance Bluesky email verification. The steps below are valid for Proton mail business subscribers.
 
 ```bash
 sudo su -l pds

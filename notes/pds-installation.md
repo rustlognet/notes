@@ -249,15 +249,11 @@ Value: did=DID
 - Replace `you.example.com` with your handle.
 - Replace `DID` with your real `did:plc:...` value.
 
-### Check
+### Check DNS
 
 ```bash
 dig TXT _atproto.you.example.com
 ```
-
-## Change handle to example.com
-
-- You can do so via Bluesky app.
 
 ## Request crawl
 
@@ -265,6 +261,71 @@ dig TXT _atproto.you.example.com
 sudo PDS_ENV_FILE=/home/pds/pds.env \
 /home/pds/repo/pdsadmin.sh request-crawl
 ```
+
+## Login to Bluesky
+
+- You can now login into your Bluesky and set your handle to `you.example.com`.
+- If you want to change your handle to your apex domain then follow the next section.
+
+## Change handle to example.com
+
+### Update DNS setting
+
+```text
+Name:  _atproto.example.com
+Type:  TXT
+Value: did=DID
+```
+- Replace `example.com` with your handle.
+- Replace `DID` with your real `did:plc:...` value.
+
+### Check DNS
+
+```bash
+dig TXT _atproto.example.com
+```
+
+### Update your handle
+
+```bash
+TOKEN=$(curl -sS https://pds.example.com/xrpc/com.atproto.server.createSession \
+  -H 'Content-Type: application/json' \
+  -d '{"identifier":"you@example.com","password":"YOUR_PASSWORD"}' \
+  | jq -r '.accessJwt') && \
+curl -i https://pds.example.com/xrpc/com.atproto.identity.updateHandle \
+  -H 'Content-Type: application/json' \
+  -H "Authorization: Bearer $TOKEN" \
+  -d '{"handle":"example.com"}'
+```
+
+Note: 
+- You can also try to update your handle in Bluesky app via GUI (did not work for me).
+
+## Configure SMTP (proton mail)
+
+You will need to configure SMTP in your PDS to receive any emails such as for instance Bluesky email verification. The step below are for proton mail (for business subscribers).
+
+```bash
+sudo su -l pds
+nano ~/pds.env
+```
+
+```text
+PDS_EMAIL_SMTP_URL=smtps://you@example.com:YOUR_SMTP_TOKEN@smtp.protonmail.ch:465
+PDS_EMAIL_FROM_ADDRESS=you@example.com
+```
+
+- Replace `you@example.com` with your real proton email address.
+- Replace `YOUR_SMTP_TOKEN` with your SMTP submission token generated in Proton's account settings.
+
+### Restart PDS
+
+```bash
+exit
+sudo systemctl restart pds
+```
+
+- You can now proceed with email verification in Bluesky app.
 
 ## Maintenance
 
@@ -319,4 +380,6 @@ The most important things to preserve are:
 
 Especially:
 - `PDS_PLC_ROTATION_KEY_K256_PRIVATE_KEY_HEX`
+
+
 

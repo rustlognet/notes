@@ -4,7 +4,7 @@ PDS installation on Ubuntu server without docker using Nginx.
 
 ## Create DNS record 
 
-- create `A` for `pds.example.com` pointing to `server-ip`.
+- Create `A` for `pds.example.com` pointing to your `server-ip`.
 
 ## Install system packages
 
@@ -93,6 +93,7 @@ LOG_ENABLED=true
 PDS_PORT=3000
 NODE_ENV=production
 ```
+- Replace `pds.example.com` and `.example.com` with your domain.
 
 ### Generate secrets
 
@@ -199,6 +200,8 @@ server {
 }
 ```
 
+- Replace `pds.example.com` with your domain.
+
 ### Enable nginx config
 
 ```bash
@@ -213,65 +216,64 @@ sudo systemctl reload nginx
 sudo certbot --nginx -d pds.example.com
 ```
 
+- Replace `pds.example.com` with your domain.
+
 ### Test
 
 ```bash
 curl https://pds.example.com/xrpc/_health
 ```
 
+- Replace `pds.example.com` with your domain.
 - You should see something like `{"version":"0.x.x"}`
 
 ## Create first account
 
 ```bash
-sudo su -l pds
-cd /home/pds/repo
-export PDS_ENV_FILE=/home/pds/pds.env
+sudo chmod +x /home/pds/repo/pdsadmin.sh
 
-./pdsadmin.sh account create you@example.com admin.example.com
+sudo PDS_ENV_FILE=/home/pds/pds.env \
+/home/pds/repo/pdsadmin.sh account create you@example.com you.example.com
 ```
 
-## Get your DID
-
-```bash
-./pdsadmin.sh account list
-```
-
-- Copy the `did:plc:...` value.
+- Replace `you@example.com` and `you.example.com` with your email and handle.
+- Copy your `did:plc:...` value and password.
 
 ## Add DNS record for your handle
 
 ```text
-Name:  _atproto.example.com
+Name:  _atproto.you.example.com
 Type:  TXT
-Value: did=did:plc:abc123xyz
+Value: did=DID
 ```
+- Replace `you.example.com` with your handle.
+- Replace `DID` with your real `did:plc:...` value.
 
 ### Check
 
 ```bash
-dig TXT _atproto.example.com
+dig TXT _atproto.you.example.com
 ```
 
 ## Change handle to example.com
 
-```bash
-./pdsadmin.sh account update-handle example.com
-```
-
-- Alternatively, you can do so via bluesky app.
+- You can do so via Bluesky app.
 
 ## Request crawl
 
 ```bash
-./pdsadmin.sh request-crawl
-```
-
-```bash
-exit
+sudo PDS_ENV_FILE=/home/pds/pds.env \
+/home/pds/repo/pdsadmin.sh request-crawl
 ```
 
 ## Maintenance
+
+### See accounts
+
+```bash
+sudo PDS_ENV_FILE=/home/pds/pds.env \
+/home/pds/repo/pdsadmin.sh account list
+```
 
 ### Logs
 

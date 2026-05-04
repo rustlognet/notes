@@ -13,6 +13,7 @@ This repository contains my personal notes.
 - [Nginx Installation](notes/nginx-installation.md)
 - [Nodejs Installation](notes/nodejs-installation.md)
 - [Open Ssh](notes/open-ssh.md)
+- [Pds Installation](notes/pds-installation.md)
 - [Push A Repo To Github](notes/push-a-repo-to-github.md)
 - [Rust Installation](notes/rust-installation.md)
 - [Snap Package Management](notes/snap-package-management.md)

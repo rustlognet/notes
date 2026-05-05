@@ -1,6 +1,6 @@
 ## Summary
 
-Creating [https://standard.site](standard.site) records in self-hosted PDS from existing 11ty project using [https://sequoia.pub](Sequoia).
+Creating [Standard.site](https://standard.site) records in self-hosted PDS from existing 11ty project using [Sequoia](https://sequoia.pub).
 
 ## Install Sequoia and log in
 

@@ -24,13 +24,21 @@ Next steps:
 - `Cover images directory` - e.g. ./views/assets/images (or leave blank)
 - `Public directory` - e.g. ./public
 - `Build output directory` - your 11ty output directory, e.g. ./dist
-- `URL path prefix for posts` - e.g. ./blog 
-- `Frontmatter field mappings` - title, description, publishDate, cover image
+- `URL path prefix for posts` - e.g. /blog or /post
+- `Frontmatter field mappings` 
+    - title
+    - description
+    - date
+    - cover image
+    - tags
+    - draft
 - `Publication setup` - create a new publication
     - `Publication name` - the name of your blog
     - `Publication description` - a blog's description
     - `Icon image path` - optional path to blog's icon image (./public/icon.png)
-    - `Show in discover feed?` - yes
+    - `Show in discover feed?` - yes/no
+    - `Enable automatic Bluesky posting when publishing` - yes/no
+    - `Maximum age (in days) for posts to be shared on Bluesky` - e.g. 7
 
 Sequoia will create `sequoia.json`, create a publication record and place `.well-known/site.standard.publication` in your `public` directory.
 

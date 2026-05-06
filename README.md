@@ -14,6 +14,7 @@ This repository contains my personal notes.
 - [Nodejs Installation](notes/nodejs-installation.md)
 - [Open SSH](notes/open-ssh.md)
 - [PDS Installation](notes/pds-installation.md)
+- [Photoswipe In Eleventy](notes/photoswipe-in-eleventy.md)
 - [Push A Repo To Github](notes/push-a-repo-to-github.md)
 - [Rust Installation](notes/rust-installation.md)
 - [Snap Package Management](notes/snap-package-management.md)

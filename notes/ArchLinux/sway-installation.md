@@ -1,6 +1,6 @@
 ## Summary
 
-Sway installation on ArchLinux.
+Minimal Sway installation on ArchLinux.
 
 ## Update the system
 
@@ -10,99 +10,14 @@ sudo pacman -Syu
 ## Install Sway and basic tools
 
 ```bash
-sudo pacman -S sway swaybg swaylock swayidle waybar foot wofi xdg-desktop-portal-wlr
+sudo pacman -S sway foot intel-ucode vulkan-intel intel-media-driver
 ```
 
 - `sway` - the compositor/window manager
-- `swaybg` - wallpaper utility
-- `swaylock` - screen locker
-- `swayidle` - idle management
-- `waybar` - top bar/panel
 - `foot` - lightweight Wayland terminal
-- `wofi`- app launcher
-- `xdg-desktop-portal-wlr` - screen sharing / portals
-
-## Install graphics + audio utilities
-
-Graphics:
-
-```bash
-sudo pacman -S mesa vulkan-intel
-```
-
-Audio:
-
-```bash
-sudo pacman -S pipewire wireplumber pipewire-pulse pavucontrol
-```
-Enable audio session:
-
-```bahs
-systemctl --user enable --now pipewire pipewire-pulse wireplumber
-```
-
-## Install a login manager (optional)
-
-```bash
-sudo pacman -S greetd tuigreet
-```
-
-Create config:
-
-```bash
-sudo mkdir -p /etc/greetd
-sudo nano /etc/greetd/config.toml
-```
-
-```text
-[terminal]
-vt = 1
-
-[default_session]
-command = "tuigreet --cmd sway"
-user = "greeter"
-```
-
-Enable it:
-
-```bash
-sudo systemctl enable greetd
-```
-
-```bash
-reboot
-```
-
-
-## No login manager - start manually
-
-Login.
-
-```bash
-sway
-```
-
-You can automate this in `.bash_profile`:
-
-```bash
-nano ~/.bash_profile
-```
-
-```bash
-if [ -z "$DISPLAY" ] && [ "$(tty)" = "/dev/tty1" ]; then
-  exec sway
-fi
-```
-
-## First launch - basics
-
-Useful shortcuts:
-
-`Super + Enter` - open terminal
-`Super + D` - app launcher
-`Super + Shift + E` - exit sway
-`Super + Shift + Q` - close window
-`Super + 1..9` - switch workspace
+- `intel-ucode` - Intel CPU microcode updates
+- `vulkan-intel` - Intel Vulkan driver
+- `intel-media-driver` - hardware video acceleration
 
 ## Configuration
 
@@ -119,12 +34,55 @@ Then edit:
 nano ~/.config/sway/config
 ```
 
-## Nice extra packages
+## Start Sway (no login manager)
+
+After login in tty run:
 
 ```bash
-sudo pacman -S firefox thunar grim slurp wl-clipboard
+exec dbus-run-session sway
 ```
 
-- `thunar` - file manager
-- `grim + slurp` - screenshots
-- `wl-clipboard` - clipboard tools
+You can automate this in `.bash_profile`:
+
+```bash
+nano ~/.bash_profile
+```
+With confirmation:
+
+```bash
+# Auto-launch Sway on TTY1 login
+if [ "$(tty)" = "/dev/tty1" ]; then
+    read -p "Start Sway? [y]es or [n]o: " -n 1 -r
+    echo
+    if [[ $REPLY =~ ^[Yy]$ ]]; then
+        exec dbus-run-session sway
+    fi
+fi
+```
+
+Without confirmation:
+
+```bash
+# If running from tty1 start sway
+[ "$(tty)" = "/dev/tty1" ] && exec dbus-run-session sway
+```
+
+## Reboot
+
+```bash
+reboot
+```
+
+## First launch - basics
+
+Useful shortcuts:
+
+`Super + Enter` - open terminal
+`Super + Shift + E` - exit sway
+`Super + Shift + Q` - close window
+`Super + 1..9` - switch workspace
+
+## Other packages
+
+- `waybar` - top bar
+- `wofi` - application launcher

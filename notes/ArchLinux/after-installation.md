@@ -4,6 +4,8 @@
 
 ## Create normal user
 
+Login as root.
+
 ```bash
 useradd -m -G wheel -s /bin/bash <username>
 ```

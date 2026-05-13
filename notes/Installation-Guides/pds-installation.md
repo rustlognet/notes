@@ -1,6 +1,6 @@
 ## Summary
 
-PDS installation on Ubuntu server without docker using Nginx.
+AT Proto PDS installation on Ubuntu server without docker using Nginx.
 
 ## Create DNS record 
 

@@ -19,12 +19,12 @@ This repository contains my personal notes.
 
 ## Installation Guides
 
-- [Mdbook Installation](notes/Installation Guides/mdbook-installation.md)
-- [Miniflux Installation](notes/Installation Guides/miniflux-installation.md)
-- [Nodejs Installation](notes/Installation Guides/nodejs-installation.md)
-- [Pds Installation](notes/Installation Guides/pds-installation.md)
-- [Rust Installation](notes/Installation Guides/rust-installation.md)
-- [Syncthing Installation](notes/Installation Guides/syncthing-installation.md)
+- [Mdbook Installation](notes/Installation-Guides/mdbook-installation.md)
+- [Miniflux Installation](notes/Installation-Guides/miniflux-installation.md)
+- [Nodejs Installation](notes/Installation-Guides/nodejs-installation.md)
+- [Pds Installation](notes/Installation-Guides/pds-installation.md)
+- [Rust Installation](notes/Installation-Guides/rust-installation.md)
+- [Syncthing Installation](notes/Installation-Guides/syncthing-installation.md)
 
 ## Linux
 

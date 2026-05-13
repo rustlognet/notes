@@ -4,7 +4,7 @@ A few notes on Nginx configuration.
 
 **Prerequisites:**
 
-- [Nginx installation](/notes/nginx-installation.md)
+- [Nginx installation](/notes/Linux/nginx-installation.md)
 
 ## Sources
 
@@ -93,4 +93,4 @@ sudo systemctl reload nginx
 
 ## Related
 
-- [SSL certificate](/notes/ssl-certificate.md)
+- [SSL certificate](/notes/Linux/ssl-certificate.md)

@@ -1,3 +1,7 @@
+## Prerequisites
+
+- [ArchLinux is installed](/notes/ArchLinux/installation.md)
+
 ## Create normal user
 
 ```bash

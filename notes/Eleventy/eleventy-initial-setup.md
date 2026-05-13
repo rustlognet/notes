@@ -4,7 +4,7 @@ Creating a new 11ty project.
 
 **Prerequisites:**
 
-- [Node.js installation](/notes/nodejs-installation.md)
+- [Node.js installation](/notes/Linux/nginx-installation.md)
 
 ## Create package.json
 

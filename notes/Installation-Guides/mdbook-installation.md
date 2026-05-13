@@ -4,7 +4,7 @@
 
 ## Prerequisites
 
-- [Rust installation](/notes/rust-installation.md)
+- [Rust installation](/notes/Installation-Guides/rust-installation.md)
 
 ## Intstallation & update
 

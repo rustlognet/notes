@@ -4,7 +4,7 @@ How to clone an Eleventy repo from GitHub and build it on a Linux server.
 
 **Prerequisite:**
 
-- [Node.js installation](/notes/nodejs-installation.md) on the server.
+- [Node.js installation](/notes/Installation-Guides/nodejs-installation.md) on the server.
 
 ## Create a working directory
 
@@ -48,6 +48,6 @@ npm run build
 
 ## Related
 
-- [Nginx installation](/notes/nginx-installation.md)
-- [Nginx configuration](/notes/nginx-configuration.md)
-- [SSL certificate](/notes/ssl-certificate.md)
+- [Nginx installation](/notes/Linux/nginx-installation.md)
+- [Nginx configuration](/notes/Linux/nginx-configuration.md)
+- [SSL certificate](/notes/Linux/ssl-certificate.md)

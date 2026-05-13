@@ -1,4 +1,8 @@
-## Installation USB
+## Summary
+
+ArchLinux installation.
+
+## Create Installation USB
 
 - https://archlinux.org/download/
 - archlinux-YYYY.MM.DD-x86_64.iso

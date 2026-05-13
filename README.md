@@ -11,6 +11,7 @@ This repository contains my personal notes.
 - [Installation](notes/ArchLinux/installation.md)
 - [Kde Plasma Installation](notes/ArchLinux/kde-plasma-installation.md)
 - [Package Management](notes/ArchLinux/package-management.md)
+- [Sway Installation](notes/ArchLinux/sway-installation.md)
 - [Yay Installation](notes/ArchLinux/yay-installation.md)
 
 ## Eleventy

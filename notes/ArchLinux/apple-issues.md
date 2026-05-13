@@ -15,6 +15,8 @@ sudo systemctl start bluetooth
 
 ### Pair in KDE Plasma settings
 
+Requires [KDE Plasma](/notes/ArchLinux/kde-plasma-installation.md).
+
 1. Open **System Settings → Bluetooth**
 2. Turn Bluetooth ON
 3. Turn on your Magic Mouse

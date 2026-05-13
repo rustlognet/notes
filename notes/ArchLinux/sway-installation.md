@@ -77,10 +77,10 @@ reboot
 
 Useful shortcuts:
 
-`Super + Enter` - open terminal
-`Super + Shift + E` - exit sway
-`Super + Shift + Q` - close window
-`Super + 1..9` - switch workspace
+- `Super + Enter` - open terminal
+- `Super + Shift + E` - exit sway
+- `Super + Shift + Q` - close window
+- `Super + 1..9` - switch workspace
 
 ## Other packages
 

@@ -86,3 +86,4 @@ Useful shortcuts:
 
 - `waybar` - top bar
 - `wofi` - application launcher
+- `swaybg` - wallpaper utility

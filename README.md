@@ -4,21 +4,34 @@ This repository contains my personal notes.
 
 ## Table of Contents
 
-- [Advanced Packaging Tool](notes/advanced-packaging-tool.md)
-- [Build Eleventy On Linux](notes/build-eleventy-on-linux.md)
-- [Eleventy Initial Setup](notes/eleventy-initial-setup.md)
-- [Mdbook Installation](notes/mdbook-installation.md)
-- [Miniflux Installation](notes/miniflux-installation.md)
-- [Nginx Configuration](notes/nginx-configuration.md)
-- [Nginx Installation](notes/nginx-installation.md)
-- [Nodejs Installation](notes/nodejs-installation.md)
-- [Open SSH](notes/open-ssh.md)
-- [PDS Installation](notes/pds-installation.md)
-- [Photoswipe In Eleventy](notes/photoswipe-in-eleventy.md)
-- [Push A Repo To Github](notes/push-a-repo-to-github.md)
-- [Rust Installation](notes/rust-installation.md)
-- [Snap Package Management](notes/snap-package-management.md)
-- [SSL Certificate](notes/ssl-certificate.md)
-- [Standard.site in 11ty via Sequoia](notes/standard.site-in-11ty-via-sequoia.md)
-- [Syncthing Installation](notes/syncthing-installation.md)
+## ArchLinux
+
+- [After Installation](notes/ArchLinux/after-installation.md)
+- [Installation](notes/ArchLinux/installation.md)
+
+## Eleventy
+
+- [Build Eleventy On Linux](notes/Eleventy/build-eleventy-on-linux.md)
+- [Eleventy Initial Setup](notes/Eleventy/eleventy-initial-setup.md)
+- [Photoswipe In Eleventy](notes/Eleventy/photoswipe-in-eleventy.md)
+- [Push A Repo To Github](notes/Eleventy/push-a-repo-to-github.md)
+- [Standard.Site In 11ty Via Sequoia](notes/Eleventy/standard.site-in-11ty-via-sequoia.md)
+
+## Installation Guides
+
+- [Mdbook Installation](notes/Installation Guides/mdbook-installation.md)
+- [Miniflux Installation](notes/Installation Guides/miniflux-installation.md)
+- [Nodejs Installation](notes/Installation Guides/nodejs-installation.md)
+- [Pds Installation](notes/Installation Guides/pds-installation.md)
+- [Rust Installation](notes/Installation Guides/rust-installation.md)
+- [Syncthing Installation](notes/Installation Guides/syncthing-installation.md)
+
+## Linux
+
+- [Advanced Packaging Tool](notes/Linux/advanced-packaging-tool.md)
+- [Nginx Configuration](notes/Linux/nginx-configuration.md)
+- [Nginx Installation](notes/Linux/nginx-installation.md)
+- [Open Ssh](notes/Linux/open-ssh.md)
+- [Snap Package Management](notes/Linux/snap-package-management.md)
+- [Ssl Certificate](notes/Linux/ssl-certificate.md)
 

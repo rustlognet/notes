@@ -7,7 +7,11 @@ This repository contains my personal notes.
 ## ArchLinux
 
 - [After Installation](notes/ArchLinux/after-installation.md)
+- [Apple Issues](notes/ArchLinux/apple-issues.md)
 - [Installation](notes/ArchLinux/installation.md)
+- [Kde Plasma Installation](notes/ArchLinux/kde-plasma-installation.md)
+- [Package Management](notes/ArchLinux/package-management.md)
+- [Yay Installation](notes/ArchLinux/yay-installation.md)
 
 ## Eleventy
 

@@ -28,7 +28,7 @@ mkdir -p ~/.config/sway
 cp /etc/sway/config ~/.config/sway/config
 ```
 
-Then edit:
+Read the default config - it has comments that explain what each option does. Read `man 5 sway` for more information about each config command:
 
 ```bash
 nano ~/.config/sway/config
